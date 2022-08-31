@@ -10,7 +10,7 @@ images.forEach((image) => {
   });
   image.addEventListener("mouseout", () => {
     modal.style.opacity = "0";
-    modal.children[0].src = "";
     document.body.style.overflow = "visible";
+    modal.children[0].src = "";
   });
 });
