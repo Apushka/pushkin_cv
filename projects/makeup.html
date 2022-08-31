@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/favicon.ico" />
+    <link rel="stylesheet" href="../index.css" type="text/css" />
+    <link rel="stylesheet" href="project.css" type="text/css" />
+    <script defer src="project.js"></script>
+    <title>Make Up</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="logo">
+        <img class="logo__icon" src="../assets/logo.png" alt="logo icon" />
+      </span>
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__item item">
+            <a class="item__link" href="../index.html">На главную</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="language" href="./en/index.html">
+        <img
+          class="language__icon"
+          src="../assets/english.png"
+          alt="russian flag icon"
+        />
+        <span class="language__label">English</span>
+      </a>
+    </header>
+    <section class="project">
+      <h1 class="project__title">
+        Fullstack-проект<br />для селебрити-визажиста
+      </h1>
+      <div class="project__description description">
+        <div class="description__goals">
+          <ul class="goals">
+            <li class="goals__goal goal">
+              <h3 class="goal__title">Реализовал бэкенд на NodeJS, Express</h3>
+              <p class="goal__label">Сервер обеспечивает:</p>
+              <ul class="goal__item goal-item">
+                <li class="goal-item__item">
+                  взаимодействие с базой данный MongoDB
+                </li>
+                <li class="goal-item__item">
+                  авторизацию пользователя в личном кабинете
+                </li>
+                <li class="goal-item__item">
+                  наполнение сайта контентом по категориям - портфолио, блог,
+                  общая информация
+                </li>
+                <li class="goal-item__item">
+                  отправку сообщений на email владельца через форму обратной
+                  связи
+                </li>
+              </ul>
+            </li>
+            <li class="goals__goal goal">
+              <h3 class="goal__title">Реализовал фронтенд на React</h3>
+              <p class="goal__label">Клиент позволяет:</p>
+              <ul class="goal__item goal-item">
+                <li class="goal-item__item">
+                  просматривать контент в режиме пользователя
+                </li>
+                <li class="goal-item__item">
+                  отправлять сообщения через форму обратной связи
+                </li>
+                <li class="goal-item__item">
+                  осуществить вход в личный кабинет (для владельца) для
+                  редактирования контента сайта по категориям
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description__images images">
+          <img
+            class="images__image"
+            src="../assets/makeup/makeup1.jpeg"
+            alt="rel1 image"
+          />
+          <img
+            class="images__image"
+            src="../assets/makeup/makeup2.jpeg"
+            alt="rel2 image"
+          />
+          <img
+            class="images__image"
+            src="../assets/makeup/makeup3.jpeg"
+            alt="rel2 image"
+          />
+          <img
+            class="images__image"
+            src="../assets/makeup/makeup4.jpeg"
+            alt="rel2 image"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="modal">
+      <img class="modal__image" src="" alt="modal image" />
+    </section>
+  </body>
+</html>

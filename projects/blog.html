@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/favicon.ico" />
+    <link rel="stylesheet" href="../index.css" type="text/css" />
+    <link rel="stylesheet" href="project.css" type="text/css" />
+    <script defer src="project.js"></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="logo">
+        <img class="logo__icon" src="../assets/logo.png" alt="logo icon" />
+      </span>
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__item item">
+            <a class="item__link" href="../index.html">На главную</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="language" href="./en/index.html">
+        <img
+          class="language__icon"
+          src="../assets/english.png"
+          alt="russian flag icon"
+        />
+        <span class="language__label">English</span>
+      </a>
+    </header>
+    <section class="project">
+      <h1 class="project__title">Учебный проект<br />по React Native</h1>
+      <div class="project__description description">
+        <div class="description__goals">
+          <ul class="goals">
+            <li class="goals__goal goal">
+              <h3 class="goal__title">React Native + Firebase</h3>
+              <p class="goal__label">Функционал приложения включает в себя:</p>
+              <ul class="goal__item goal-item">
+                <li class="goal-item__item">создание записей в личный блог</li>
+                <li class="goal-item__item">редактирование постов</li>
+                <li class="goal-item__item">добавление постов в избранное</li>
+                <li class="goal-item__item">вкладки "Все" и "Избранное"</li>
+                <li class="goal-item__item">drawer-меню</li>
+                <li class="goal-item__item">
+                  возможность делать фотографии с устройства для дальнейшего
+                  добавления в новый пост
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description__images images">
+          <video
+            class="images__image"
+            src="../assets/blogRN/blogRN.mp4"
+            alt="blog image"
+          ></video>
+        </div>
+      </div>
+    </section>
+    <section class="modal">
+      <video class="modal__image" src="" alt="modal image" autoplay></video>
+    </section>
+  </body>
+</html>
