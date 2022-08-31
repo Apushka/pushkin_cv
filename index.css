@@ -36,12 +36,12 @@ body {
 .nav__items {
   display: flex;
   justify-content: center;
-  gap: 30px;
   list-style: none;
 }
 
 .item__link {
   color: white;
+  margin-right: 30px;
   text-decoration: none;
 }
 
