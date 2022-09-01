@@ -2,6 +2,10 @@ body {
   position: relative;
 }
 
+.project {
+  padding-bottom: 100px;
+}
+
 .description {
   display: flex;
   width: 100%;
@@ -72,6 +76,26 @@ body {
   border-left: 2px solid gray;
   border-bottom: 2px solid gray;
   cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 40px;
+  background-color: black;
+}
+
+.footer__content {
+  width: 30%;
+}
+
+.footer__content .contact__icon {
+  filter: grayscale(100%);
+}
+
+.footer__content .contact__icon:hover {
+  filter: none;
 }
 
 .modal {

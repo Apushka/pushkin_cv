@@ -4,6 +4,7 @@ const modal = document.querySelector(".modal");
 images.forEach((image) => {
   image.addEventListener("mouseover", () => {
     modal.children[0].src = image.getAttribute("src");
+    if (image.tagName === "VIDEO") modal.children[0].play();
     modal.style.transition = "opacity 0.3s ease-out";
     modal.style.opacity = "1";
     document.body.style.overflow = "hidden";
@@ -12,6 +13,8 @@ images.forEach((image) => {
     modal.style.transition = "none";
     modal.style.opacity = "0";
     document.body.style.overflow = "visible";
-    modal.children[0].src = "";
+    if (image.tagName === "VIDEO") modal.children[0].pause();
+    // modal.children[0].src = "";
+    console.log(image.tagName);
   });
 });

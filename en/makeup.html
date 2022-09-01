@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/favicon.ico" />
+    <link rel="stylesheet" href="../index.css" type="text/css" />
+    <link rel="stylesheet" href="../page.css" type="text/css" />
+    <script defer src="../page.js"></script>
+    <title>Make Up</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="logo">
+        <img class="logo__icon" src="../assets/logo.png" alt="logo icon" />
+      </span>
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__item item">
+            <buttom class="item__link" onclick="history.back()">Back</button>
+          </li>
+          <li class="nav__item item">
+            <a class="item__link" href="../en/index.html">To main</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="language" href="../ru/makeup.html">
+        <img
+          class="language__icon"
+          src="../assets/russian.png"
+          alt="russian flag icon"
+        />
+        <span class="language__label">Русский</span>
+      </a>
+    </header>
+    <section class="project">
+      <h1 class="project__title">
+        Celebrity makeup artist<br />fullstack application
+      </h1>
+      <div class="project__description description">
+        <div class="description__goals">
+          <ul class="goals">
+            <li class="goals__goal goal">
+              <h3 class="goal__title">NodeJS, Express backend</h3>
+              <p class="goal__label">Server provides:</p>
+              <ul class="goal__item goal-item">
+                <li class="goal-item__item">interaction with MongoDB</li>
+                <li class="goal-item__item">
+                  authorization in administrator's account
+                </li>
+                <li class="goal-item__item">
+                  managing site content via administrator's account
+                </li>
+                <li class="goal-item__item">
+                  sending messages to linked email via feedback form on site
+                </li>
+              </ul>
+            </li>
+            <li class="goals__goal goal">
+              <h3 class="goal__title">React fronted</h3>
+              <p class="goal__label">Client allows:</p>
+              <ul class="goal__item goal-item">
+                <li class="goal-item__item">browse site content as a guest</li>
+                <li class="goal-item__item">send messages via feedback form</li>
+                <li class="goal-item__item">
+                  log in as administrator and manage the content of the site
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description__images images">
+          <img
+            class="images__image"
+            src="../assets/makeup/makeup1.jpeg"
+            alt="rel1 image"
+          />
+          <img
+            class="images__image"
+            src="../assets/makeup/makeup2.jpeg"
+            alt="rel2 image"
+          />
+          <img
+            class="images__image"
+            src="../assets/makeup/makeup3.jpeg"
+            alt="rel2 image"
+          />
+          <img
+            class="images__image"
+            src="../assets/makeup/makeup4.jpeg"
+            alt="rel2 image"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="modal">
+      <img class="modal__image" src="" alt="modal image" />
+    </section>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="contacts">
+          <a class="contacts__contact contact" href="telegram:89260231390">
+            <img
+              class="contact__icon"
+              src="../assets/telegram.png"
+              alt="telegram icon"
+            />
+          </a>
+          <a class="contacts__contact contact" href="mailto:apushkaa@gmail.com">
+            <img
+              class="contact__icon"
+              src="../assets/google.png"
+              alt="google icon"
+            />
+          </a>
+          <a class="contacts__contact contact" href="whatsapp:89260231390">
+            <img
+              class="contact__icon"
+              src="../assets/whatsapp.png"
+              alt="whatsapp icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

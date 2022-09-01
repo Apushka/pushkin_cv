@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/favicon.ico" />
+    <link rel="stylesheet" href="../index.css" type="text/css" />
+    <link rel="stylesheet" href="../page.css" type="text/css" />
+    <script defer src="../page.js"></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="logo">
+        <img class="logo__icon" src="../assets/logo.png" alt="logo icon" />
+      </span>
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__item item">
+            <buttom class="item__link" onclick="history.back()">Back</button>
+          </li>
+          <li class="nav__item item">
+            <a class="item__link" href="../en/index.html">To main</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="language" href="../ru/blog.html">
+        <img
+          class="language__icon"
+          src="../assets/russian.png"
+          alt="russian flag icon"
+        />
+        <span class="language__label">Русский</span>
+      </a>
+    </header>
+    <section class="project">
+      <h1 class="project__title">React Native training project</h1>
+      <div class="project__description description">
+        <div class="description__goals">
+          <ul class="goals">
+            <li class="goals__goal goal">
+              <h3 class="goal__title">React Native + Firebase</h3>
+              <p class="goal__label">Application allows to:</p>
+              <ul class="goal__item goal-item">
+                <li class="goal-item__item">create blog posts</li>
+                <li class="goal-item__item">edit blog posts</li>
+                <li class="goal-item__item">add posts to "Favourites"</li>
+                <li class="goal-item__item">"All" and "Favourites" tabs</li>
+                <li class="goal-item__item">drawer-menu</li>
+                <li class="goal-item__item">
+                  take pictures via device camera and add them to new post
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description__images images">
+          <video
+            class="images__image"
+            src="../assets/blogRN/blogRN.mp4"
+            alt="blog image"
+            autoplay
+            muted
+          ></video>
+        </div>
+      </div>
+    </section>
+    <section class="modal">
+      <video class="modal__image" src="" alt="modal image" autoplay muted></video>
+    </section>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="contacts">
+          <a class="contacts__contact contact" href="telegram:89260231390">
+            <img
+              class="contact__icon"
+              src="../assets/telegram.png"
+              alt="telegram icon"
+            />
+          </a>
+          <a class="contacts__contact contact" href="mailto:apushkaa@gmail.com">
+            <img
+              class="contact__icon"
+              src="../assets/google.png"
+              alt="google icon"
+            />
+          </a>
+          <a class="contacts__contact contact" href="whatsapp:89260231390">
+            <img
+              class="contact__icon"
+              src="../assets/whatsapp.png"
+              alt="whatsapp icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

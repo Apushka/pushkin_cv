@@ -43,6 +43,7 @@ body {
   color: white;
   margin-right: 30px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .item__link:hover {
@@ -71,6 +72,7 @@ body {
 
 /* section */
 .section {
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -182,8 +184,8 @@ body {
 }
 .contact {
   display: inline-block;
-  width: 70px;
-  height: 70px;
+  width: 5%;
+  height: 5%;
 }
 
 .contact__icon {

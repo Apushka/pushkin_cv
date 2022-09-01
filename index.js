@@ -22,8 +22,8 @@ window.addEventListener("scroll", () => {
     sections.forEach((section, sIndex) => {
       const isContain = links[sIndex].classList.contains("item__link_active");
       if (
-        section.getBoundingClientRect().top >= 0 &&
-        section.getBoundingClientRect().top <= window.innerHeight
+        section.getBoundingClientRect().top >= -100 &&
+        section.getBoundingClientRect().top <= window.innerHeight / 1.5
       ) {
         if (!isContain) {
           links[sIndex].classList.add("item__link_active");

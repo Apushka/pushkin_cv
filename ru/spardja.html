@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../assets/favicon.ico" />
     <link rel="stylesheet" href="../index.css" type="text/css" />
-    <link rel="stylesheet" href="project.css" type="text/css" />
-    <script defer src="project.js"></script>
+    <link rel="stylesheet" href="../page.css" type="text/css" />
+    <script defer src="../page.js"></script>
     <title>Music App</title>
   </head>
   <body>
@@ -18,11 +18,14 @@
       <nav class="nav">
         <ul class="nav__items">
           <li class="nav__item item">
-            <a class="item__link" href="../index.html">На главную</a>
+            <buttom class="item__link" onclick="history.back()">Назад</button>
+          </li>
+          <li class="nav__item item">
+            <a class="item__link" href="../en/index.html">На главную</a>
           </li>
         </ul>
       </nav>
-      <a class="language" href="./en/index.html">
+      <a class="language" href="../en/spardja.html">
         <img
           class="language__icon"
           src="../assets/english.png"
@@ -86,5 +89,32 @@
     <section class="modal">
       <img class="modal__image" src="" alt="modal image" />
     </section>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="contacts">
+          <a class="contacts__contact contact" href="telegram:89260231390">
+            <img
+              class="contact__icon"
+              src="../assets/telegram.png"
+              alt="telegram icon"
+            />
+          </a>
+          <a class="contacts__contact contact" href="mailto:apushkaa@gmail.com">
+            <img
+              class="contact__icon"
+              src="../assets/google.png"
+              alt="google icon"
+            />
+          </a>
+          <a class="contacts__contact contact" href="whatsapp:89260231390">
+            <img
+              class="contact__icon"
+              src="../assets/whatsapp.png"
+              alt="whatsapp icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
