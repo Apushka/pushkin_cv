@@ -1,20 +1,18 @@
-const images = document.querySelectorAll(".images__image");
 const modal = document.querySelector(".modal");
 
-images.forEach((image) => {
-  image.addEventListener("mouseover", () => {
-    modal.children[0].src = image.getAttribute("src");
-    if (image.tagName === "VIDEO") modal.children[0].play();
-    modal.style.transition = "opacity 0.3s ease-out";
-    modal.style.opacity = "1";
-    document.body.style.overflow = "hidden";
-  });
-  image.addEventListener("mouseout", () => {
-    modal.style.transition = "none";
-    modal.style.opacity = "0";
-    document.body.style.overflow = "visible";
-    if (image.tagName === "VIDEO") modal.children[0].pause();
-    // modal.children[0].src = "";
-    console.log(image.tagName);
-  });
+const imagesContainer = document.querySelector(".description__images");
+
+imagesContainer.addEventListener("click", (e) => {
+  const image = e.target;
+  modal.children[0].src = image.getAttribute("src");
+  if (image.tagName === "VIDEO") modal.children[0].play();
+  modal.style.top = "0";
+  modal.style.opacity = "1";
+  document.body.style.overflow = "hidden";
+});
+
+modal.addEventListener("click", () => {
+  modal.style.top = "-100%";
+  modal.style.opacity = "0";
+  document.body.style.overflow = "visible";
 });
