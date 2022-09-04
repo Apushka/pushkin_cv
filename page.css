@@ -170,4 +170,26 @@ body {
   .footer {
     display: none;
   }
+
+  .back {
+    position: relative;
+    z-index: 3;
+    width: 11px;
+    height: 11px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    margin-right: 19px;
+  }
+
+  .back__line {
+    position: absolute;
+    background-color: white;
+    top: 5px;
+    left: -3px;
+    width: 160%;
+    height: 1px;
+    transform: rotate(45deg);
+  }
 }

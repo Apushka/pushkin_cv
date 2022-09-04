@@ -12,19 +12,12 @@
   </head>
   <body>
     <header class="header">
-      <span class="logo">
+      <div class="back" role="button" onClick="history.back()">
+        <span class="back__line"></span>
+      </div>
+      <a class="logo" href="../index.html">
         <img class="logo__icon" src="../assets/logo.png" alt="logo icon" />
-      </span>
-      <nav class="nav">
-        <ul class="nav__items">
-          <li class="nav__item item">
-            <buttom class="item__link" onclick="history.back()">Назад</button>
-          </li>
-          <li class="nav__item item">
-            <a class="item__link" href="../index.html">На главную</a>
-          </li>
-        </ul>
-      </nav>
+      </a>
       <a class="language" href="../en/blog.html">
         <img
           class="language__icon"
@@ -33,9 +26,6 @@
         />
         <span class="language__label">English</span>
       </a>
-      <div class="burger">
-        <span class="burger__line"></span>
-      </div>
     </header>
     <section class="project">
       <h1 class="project__title">Учебный проект<br />по React Native</h1>
@@ -71,7 +61,13 @@
       </div>
     </section>
     <section class="modal">
-      <video class="modal__image" src="" alt="modal image" autoplay muted></video>
+      <video
+        class="modal__image"
+        src=""
+        alt="modal image"
+        autoplay
+        muted
+      ></video>
     </section>
     <footer class="footer">
       <div class="footer__content">
