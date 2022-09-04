@@ -255,6 +255,10 @@ body {
     padding: 0 10px;
   }
 
+  .logo {
+    order: 2;
+  }
+
   .lock {
     overflow: hidden;
   }
@@ -269,6 +273,7 @@ body {
     left: 0;
     background-color: white;
     z-index: 1;
+    order: 1;
   }
 
   .nav__items {
@@ -285,6 +290,10 @@ body {
 
   .item__link {
     color: black;
+  }
+
+  .language {
+    order: 3;
   }
 
   .language__label {

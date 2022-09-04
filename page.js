@@ -17,12 +17,14 @@ nav.addEventListener("click", () => {
 const imagesContainer = document.querySelector(".description__images");
 
 imagesContainer.addEventListener("click", (e) => {
-  const image = e.target;
-  modal.children[0].src = image.getAttribute("src");
-  if (image.tagName === "VIDEO") modal.children[0].play();
-  modal.style.top = "0";
-  modal.style.opacity = "1";
-  document.body.style.overflow = "hidden";
+  if (window.innerWidth > 767) {
+    const image = e.target;
+    modal.children[0].src = image.getAttribute("src");
+    if (image.tagName === "VIDEO") modal.children[0].play();
+    modal.style.top = "0";
+    modal.style.opacity = "1";
+    document.body.style.overflow = "hidden";
+  }
 });
 
 modal.addEventListener("click", () => {
