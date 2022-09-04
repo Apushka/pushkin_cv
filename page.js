@@ -17,8 +17,8 @@ nav.addEventListener("click", () => {
 const imagesContainer = document.querySelector(".description__images");
 
 imagesContainer.addEventListener("click", (e) => {
-  if (window.innerWidth > 767) {
-    const image = e.target;
+  const image = e.target;
+  if (window.innerWidth > 767 || image.tagName === "VIDEO") {
     modal.children[0].src = image.getAttribute("src");
     if (image.tagName === "VIDEO") modal.children[0].play();
     modal.style.top = "0";

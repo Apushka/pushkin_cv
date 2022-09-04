@@ -142,6 +142,7 @@ body {
   font-size: 28px;
   letter-spacing: 5px;
   font-weight: 300;
+  line-height: 60px;
   margin-bottom: 60px;
 }
 
@@ -329,7 +330,7 @@ body {
   }
 
   .section__title {
-    line-height: 50px;
+    line-height: 40px;
     font-size: 18px;
     margin-bottom: 30px;
   }
