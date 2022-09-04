@@ -121,8 +121,12 @@ body {
 }
 
 @media (max-width: 767px) {
+  body {
+    padding: 0 20px;
+  }
   .project__title {
     font-size: 18px;
+    line-height: 35px;
   }
 
   .description {
@@ -132,6 +136,10 @@ body {
   .description__goals,
   .description__images {
     width: 100%;
+  }
+
+  .goals {
+    padding: 0;
   }
 
   .goal__title {
@@ -151,6 +159,10 @@ body {
   .goal-item__item {
     margin-bottom: 10px;
     font-size: 14px;
+  }
+
+  .images__image {
+    width: 100%;
   }
   .footer {
     display: none;

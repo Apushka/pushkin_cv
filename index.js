@@ -13,6 +13,7 @@ burger.addEventListener("click", () => {
 nav.addEventListener("click", () => {
   nav.classList.remove("nav_active");
   burger.classList.remove("burger_active");
+  document.body.classList.remove("lock");
 });
 
 function renderChart() {
