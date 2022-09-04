@@ -186,6 +186,7 @@ body {
   padding-left: 15px;
   border-left: 2px solid gray;
   border-bottom: 2px solid gray;
+  cursor: pointer;
 }
 
 .work__image {
