@@ -1,4 +1,18 @@
 const modal = document.querySelector(".modal");
+const nav = document.querySelector(".nav");
+const burger = document.querySelector(".burger");
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("burger_active");
+  nav.classList.toggle("nav_active");
+  document.body.classList.toggle("lock");
+});
+
+nav.addEventListener("click", () => {
+  nav.classList.remove("nav_active");
+  burger.classList.remove("burger_active");
+  document.body.classList.remove("lock");
+});
 
 const imagesContainer = document.querySelector(".description__images");
 

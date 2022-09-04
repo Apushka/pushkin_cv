@@ -1,6 +1,19 @@
 const skills = document.querySelectorAll(".skills__item");
 const sections = document.querySelectorAll(".section");
 const links = document.querySelectorAll(".item__link");
+const nav = document.querySelector(".nav");
+const burger = document.querySelector(".burger");
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("burger_active");
+  nav.classList.toggle("nav_active");
+  document.body.classList.toggle("lock");
+});
+
+nav.addEventListener("click", () => {
+  nav.classList.remove("nav_active");
+  burger.classList.remove("burger_active");
+});
 
 function renderChart() {
   window.setTimeout(() => {

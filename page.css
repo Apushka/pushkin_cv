@@ -111,7 +111,6 @@ body {
   height: 100vh;
   z-index: 10;
   background-color: rgba(128, 128, 128, 0.5);
-  text-align: start;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -119,5 +118,41 @@ body {
   width: 80%;
   border-radius: 10px;
   border: 2px solid black;
-  /* pointer-events: none; */
+}
+
+@media (max-width: 767px) {
+  .project__title {
+    font-size: 18px;
+  }
+
+  .description {
+    flex-direction: column;
+  }
+
+  .description__goals,
+  .description__images {
+    width: 100%;
+  }
+
+  .goal__title {
+    font-size: 18px;
+  }
+
+  .goal__label {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .goal__item {
+    margin-left: 15px;
+    padding: 0;
+  }
+
+  .goal-item__item {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .footer {
+    display: none;
+  }
 }

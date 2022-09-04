@@ -22,15 +22,34 @@ body {
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
   color: white;
   text-transform: uppercase;
-  z-index: 1;
+  z-index: 50;
+}
+
+.header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 3;
+}
+
+.logo {
+  z-index: 5;
 }
 
 .logo__icon {
   width: 50px;
   filter: invert(100%);
+}
+
+.nav {
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav__items {
@@ -56,9 +75,46 @@ body {
   color: gray;
 }
 
+.burger {
+  display: none;
+  position: relative;
+  z-index: 3;
+  width: 30px;
+  height: 30%;
+}
+
+.burger__line {
+  position: absolute;
+  background-color: white;
+  top: 8px;
+  width: 100%;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
 .language {
   color: white;
   text-decoration: none;
+  z-index: 3;
 }
 
 .language__icon {
@@ -172,6 +228,7 @@ body {
 }
 
 .item__info {
+  display: inline-block;
   position: relative;
   transition: left 3s ease-in-out;
   left: 0;
@@ -191,4 +248,89 @@ body {
 .contact__icon {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 767px) {
+  .lock {
+    overflow: hidden;
+  }
+
+  .nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    text-align: center;
+    top: -100%;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .nav__items {
+    height: 100%;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav__item {
+    margin-bottom: 40px;
+  }
+
+  .item__link {
+    color: black;
+  }
+
+  .language__label {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger_active:before {
+    transform: rotate(45deg);
+    top: 6px;
+  }
+
+  .burger_active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .burger_active > .burger__line {
+    transform: scale(0);
+  }
+
+  .nav_active {
+    top: 0;
+  }
+
+  .language__icon {
+    display: block;
+    width: 25px;
+    height: 20px;
+  }
+
+  .section__title {
+    line-height: 50px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .about__description {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .works__work {
+    width: 70%;
+  }
+
+  .skills {
+    width: 70%;
+  }
 }
